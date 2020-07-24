@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Tarea 1
+        </title>
+    </head>
+    <script>
+        function sumar(){
+
+            var valor1 = parseInt(document.getElementById('val1').value);
+            var valor2 = parseInt(document.getElementById('val2').value);
+
+            var resultado = valor1 + valor2;
+
+            document.getElementById('resultado').innerHTML = "El resultado es: " + resultado;
+        }
+    </script>
+
+    <body>
+        <input id="val1" placeholder="Primer valor">
+        <input id="val2" placeholder="Segundo valor">
+        <button id="calcular" onclick="sumar()">
+            Sumar
+        </button>
+
+        <h3 id="resultado">El resultado es: </h3>
+    </body>
+</html>
